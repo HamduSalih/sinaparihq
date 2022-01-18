@@ -129,7 +129,7 @@
   display: flex;
   flex-direction: column;
   background-image: url("/section3.jpg");
-  height: 50vh;
+  /* height: 50vh; */
   padding: 60px;
   justify-content: center;
   box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.6);
@@ -158,7 +158,7 @@
   flex-direction: column;
   align-items: flex-end;
   background-image: url("/section4.jpg");
-  height: 50vh;
+  /* height: 50vh; */
   padding: 60px;
   justify-content: center;
   /* box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.6); */

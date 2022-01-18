@@ -20,7 +20,7 @@ export default function Home() {
           <p className={styles.bannerContact}>Email: info@sinapari.com</p>
         </div>
         <div className={styles.banner}>
-          <Image
+          <img
             src="/sinalogo.png"
             alt="Sinapari Logo"
             height={135}

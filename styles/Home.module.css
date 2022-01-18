@@ -7,7 +7,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url("../public/banner.jpg");
+  background-image: url("/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -128,7 +128,7 @@
 .sectionThree {
   display: flex;
   flex-direction: column;
-  background-image: url("../public/section3.jpg");
+  background-image: url("/section3.jpg");
   height: 50vh;
   padding: 60px;
   justify-content: center;
@@ -157,7 +157,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background-image: url("../public/section4.jpg");
+  background-image: url("/section4.jpg");
   height: 50vh;
   padding: 60px;
   justify-content: center;

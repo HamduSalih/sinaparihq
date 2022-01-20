@@ -14,9 +14,9 @@ export default class Home extends React.Component {
     let { message, name, email } = this.state;
 
     const messageData = {
-      service_id: process.env.REACT_APP_SERVICE_ID,
-      template_id: process.env.REACT_APP_TEMPLATE_ID,
-      user_id: process.env.REACT_APP_USER_ID,
+      service_id: process.env.NEXT_PUBLIC_SERVICE_ID,
+      template_id: process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      user_id: process.env.NEXT_PUBLIC_USER_ID,
       template_params: {
         from_email: email.trim(),
         from_name: name.trim(),
@@ -43,13 +43,12 @@ export default class Home extends React.Component {
     if (valid) {
       await fetch(`https://api.emailjs.com/api/v1.0/email/send`, options)
         .then((res) => res.json())
-        .then((res) => {
-          console.log(res);
+        .then(() => {
           alert("We have received your message. Thank you");
         });
 
       // alert("correct input received");
-      // console.log(valid);
+      // console.log(messageData);
     } else {
       alert("Wrong input received");
     }
